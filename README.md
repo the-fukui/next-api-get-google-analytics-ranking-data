@@ -1,3 +1,5 @@
+# Google Analytics Reporting API からページのランキングデータを取得するNext API Routes
+
 ## install reuiqred library
 
 ```
