@@ -21,6 +21,8 @@ JSON オブジェクトを.env に持ちたいときは、JSON.stringify をか�
 JSON=""{\"key\":\"value\", ....}""
 ```
 
+というふうにダブルクオーテーションが二重になることに注意する
+
 ## API params
 
 - include_paths
@@ -29,5 +31,3 @@ JSON=""{\"key\":\"value\", ....}""
 ```
 GET /api/get_ranking?include_paths=apple,"%2Fpine.*%2F"
 ```
-
-というふうにダブルクオーテーションが二重になることに注意する
