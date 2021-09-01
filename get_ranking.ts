@@ -176,7 +176,7 @@ const getAnalyticsRankingData: NextApiHandlerWithParams<
    * @param report レポートデータオブジェクト
    * @returns path と viewsのみのオブジェクト配列
    */
-  const formatReporting = (
+  const formatReport = (
     report: GaxiosResponse<analyticsreporting_v4.Schema$GetReportsResponse>,
   ) => {
     try {
@@ -203,7 +203,7 @@ const getAnalyticsRankingData: NextApiHandlerWithParams<
   const credentials = getCredentials()
   const client = await getClient(credentials)
   const report = await getReport(client)
-  const formattedReport = formatReporting(report)
+  const formattedReport = formatReport(report)
 
   //ページパスとビュー数のみの表示
   res.status(200).json(formattedReport)
