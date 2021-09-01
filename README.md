@@ -29,5 +29,5 @@ JSON=""{\"key\":\"value\", ....}""
   - 集計対象のパスに含める、文字列orRegex配列のカンマ区切り
 
 ```
-GET /api/get_ranking?include_paths=apple,"%2Fpine.*%2F"
+GET /api/get_ranking?includes_paths=apple,"%2Fpine.*%2F"
 ```
