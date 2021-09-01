@@ -25,7 +25,7 @@ JSON=""{\"key\":\"value\", ....}""
 
 ## API params
 
-- include_paths
+- includes_paths
   - 集計対象のパスに含める、文字列orRegex配列のカンマ区切り
 
 ```
