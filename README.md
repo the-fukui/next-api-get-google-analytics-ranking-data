@@ -21,4 +21,13 @@ JSON オブジェクトを.env に持ちたいときは、JSON.stringify をか�
 JSON=""{\"key\":\"value\", ....}""
 ```
 
+## API params
+
+- include_paths
+  - 集計対象のパスに含める、文字列orRegex配列のカンマ区切り
+
+```
+GET /api/get_ranking?include_paths=apple,"%2Fpine.*%2F"
+```
+
 というふうにダブルクオーテーションが二重になることに注意する
